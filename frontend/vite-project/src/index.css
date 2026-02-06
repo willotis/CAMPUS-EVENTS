@@ -1,0 +1,282 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button,
+.btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover,
+.btn:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.btn-primary {
+  background-color: #646cff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #535bf2;
+}
+
+.btn-secondary {
+  background-color: #1a1a1a;
+  color: white;
+  border: 1px solid #646cff;
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+nav a {
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+/* Home Page Styles */
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.hero h1 {
+  margin: 0 0 1rem 0;
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.feature-card {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  border-color: #646cff;
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+/* Event Card Styles */
+.event-card {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.event-card:hover {
+  transform: translateY(-3px);
+  border-color: #646cff;
+}
+
+.event-card h3 {
+  margin-top: 1rem;
+  color: #646cff;
+}
+
+.event-card-image {
+  width: calc(100% + 3rem);
+  margin: -1.5rem -1.5rem 1rem -1.5rem;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.event-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.event-card:hover .event-card-image img {
+  transform: scale(1.05);
+}
+
+.event-date {
+  color: #888;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.event-location {
+  color: #aaa;
+  margin: 0.5rem 0;
+}
+
+.event-description {
+  margin: 1rem 0;
+}
+
+.event-organizer {
+  color: #888;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Service Card Styles */
+.service-card {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  border-color: #646cff;
+}
+
+.service-card h3 {
+  margin-top: 0;
+  color: #646cff;
+}
+
+/* Not Found Page */
+.not-found {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.not-found h1 {
+  font-size: 6rem;
+  margin: 0;
+  color: #646cff;
+}
+
+.not-found h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-top: 1px solid #333;
+  color: #888;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button,
+  .btn {
+    background-color: #f9f9f9;
+  }
+
+  nav {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .feature-card,
+  .event-card,
+  .service-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+}
